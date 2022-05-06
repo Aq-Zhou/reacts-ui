@@ -58,7 +58,7 @@ const Home = () => {
             </aside>
             <main>
                 <header>
-                    <img src={log} alt=""/>
+                    <img src={log} alt="" style={{height:"280px", width:"280px"}}/>
                     <h1>Reacts-UI</h1>
                     <p>基于React的UI组件库</p>
                     <p className="action">
