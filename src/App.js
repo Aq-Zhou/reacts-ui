@@ -228,7 +228,7 @@ const Home = () => {
                     color: "#4e6e8e"
                 }}
                 >
-                    Please ★ Thank u. Copyright © 2022 Zhou
+                    Please ★ Thank u. Copyright © 2022 Ivan-Z
                 </footer>
             </main>
 
