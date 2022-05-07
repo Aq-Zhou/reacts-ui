@@ -6,28 +6,45 @@ import skip from './icons/skip.svg';
 import styled from "styled-components";
 
 
-
 const Table = styled.div`
   width: 100%;
   height: 100%;
-  
+
   .navbar {
     box-sizing: border-box;
     border-bottom: 1px solid #eaecef;
     width: 100%;
     position: fixed;
-    padding: 10px 12px;
-    line-height: 32px;
+    padding: 10px 24px;
+    line-height: 36px;
     z-index: 1;
 
+    .sidebar-home {
 
-    .sidebar-title {
-      background: red;
+      > img {
+        display: inline-block;
+        vertical-align: top;
+      }
+
+      > span {
+        display: inline-block;
+        margin-left: 6px;
+        line-height: 36px;
+        position: relative;
+      }
     }
-    /* .links {
-        display:flex;
-        flex-direction:row;
-    } */
+
+    .navlinks {
+      padding-left: 5px;
+      box-sizing: border-box;
+      white-space: nowrap;
+      position: absolute;
+      display: flex;
+      right: 30px;
+      top: 12px;
+    }
+
+
   }
 `
 
@@ -36,13 +53,13 @@ const Home = () => {
     return (
         <Table>
             <header className="navbar">
-                <a href="/reacts-ui/" style={{textDecoration: "none"}} className="sidebar-title">
+                <a href="/reacts-ui/" style={{textDecoration: "none"}} className="sidebar-home">
                     <img src={logo} alt=""/>
-                    <span style={{fontSize: "23px", fontWeight: 600, color: "#282c34"}}>Reacts-UI</span>
+                    <span style={{fontSize: "27px", fontWeight: 600, color: "#61dafb"}}>Reacts-UI</span>
                 </a>
                 <div className="links">
                     <div className="search"></div>
-                    <nav>
+                    <nav className="navlinks">
                         <div>
                             <a href="">主页</a>
                         </div>
@@ -64,7 +81,7 @@ const Home = () => {
             </aside>
             <main>
                 <header>
-                    <img src={log} alt="" style={{height:"280px", width:"280px"}}/>
+                    <img src={log} alt="" style={{height: "280px", width: "280px"}}/>
                     <h1>Reacts-UI</h1>
                     <p>基于React的UI组件库</p>
                     <p className="action">
