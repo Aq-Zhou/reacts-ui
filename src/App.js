@@ -83,7 +83,7 @@ const Table = styled.div`
 
     > header {
       text-align: center;
-
+      
       .image-log {
         max-width: 100%;
         max-height: 280px;
@@ -142,6 +142,8 @@ const Table = styled.div`
       }
     }
   }
+
+  
 `
 
 
@@ -226,7 +228,7 @@ const Home = () => {
                     color: "#4e6e8e"
                 }}
                 >
-                    Please ★ .Copyright © 2022 ZQ
+                    Please ★ Thank u. Copyright © 2022 Zhou
                 </footer>
             </main>
 
