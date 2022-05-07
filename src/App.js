@@ -19,9 +19,15 @@ const Table = styled.div`
     padding: 10px 12px;
     line-height: 32px;
     z-index: 1;
-    a {
+
+
+    .sidebar-title {
       background: red;
     }
+    /* .links {
+        display:flex;
+        flex-direction:row;
+    } */
   }
 `
 
@@ -30,7 +36,7 @@ const Home = () => {
     return (
         <Table>
             <header className="navbar">
-                <a href="/reacts-ui/" style={{textDecoration: "none"}}>
+                <a href="/reacts-ui/" style={{textDecoration: "none"}} className="sidebar-title">
                     <img src={logo} alt=""/>
                     <span style={{fontSize: "23px", fontWeight: 600, color: "#282c34"}}>Reacts-UI</span>
                 </a>
