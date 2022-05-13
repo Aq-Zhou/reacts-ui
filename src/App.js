@@ -142,8 +142,6 @@ const Table = styled.div`
       }
     }
   }
-
-  
 `
 
 
